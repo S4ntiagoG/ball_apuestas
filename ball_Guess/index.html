@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adivina la bola — Juego</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Adivina dónde está la bola</h1>
+      <p class="subtitle"> Apuestas, si pierdes apuestas el doble y duplicas</p>
+    </header>
+
+    <section class="status">
+      <div>Saldo: <span id="balanceDisplay">$ 1000</span></div>
+      <div>Último resultado: <span id="lastResult">—</span></div>
+    </section>
+
+    <section class="controls">
+      <label for="betAmount">Monto apuesta:</label>
+      <input id="betAmount" type="number" min="1" step="1" value="100" />
+
+      <label for="multiplier">Multiplicador (ganancia si aciertas):</label>
+      <select id="multiplier">
+        <option value="1.8">x1.8 (Difícil)</option>
+        <option value="1.5" selected>x1.5 (Normal)</option>
+        <option value="1.2">x1.2 (Fácil)</option>
+      </select>
+
+      <button id="startBtn">Iniciar ronda</button>
+      <button id="resetBtn" class="danger">Reiniciar saldo</button>
+    </section>
+
+    <section class="game">
+      <div class="table">
+        <div class="cup" data-index="0">
+          <div class="cup-top"></div>
+        </div>
+        <div class="cup" data-index="1">
+          <div class="cup-top"></div>
+        </div>
+        <div class="cup" data-index="2">
+          <div class="cup-top"></div>
+        </div>
+      </div>
+      <div class="message">
+        <p id="instructions">Elige una copa después de iniciar la ronda.</p>
+      </div>
+    </section>
+
+    <footer>
+      <small>© 2025 Santiago Giraldo. Todos los derechos reservados.</small>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
