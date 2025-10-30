@@ -36,6 +36,6 @@ Sigue los pasos a continuación para ejecutar el servicio localmente o en un ser
 ### 🔹 1️⃣ Clonar el repositorio
 Clona el proyecto desde GitHub:
 ```bash
-git clone https://github.com/TU_USUARIO/apuestas.git
+git clone https://github.com/S4ntiagoG/apuestas.git
 cd apuestas
 
